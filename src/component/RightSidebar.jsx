@@ -2,6 +2,7 @@
 //when we have interaction in our website, clicking, submission, if we use states, we need to add "use client"
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import News from './News';
 
 export default function RightSidebar() {
   const [input, setInput] = useState("");
@@ -24,6 +25,7 @@ export default function RightSidebar() {
           />
         </form>
       </div>
+      <News />
     </>
   );
 }
